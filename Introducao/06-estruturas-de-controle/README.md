@@ -42,3 +42,35 @@ switch (opcao)
         break;
 }
 ```
+
+## Analogia com Python
+
+```python
+# Python
+class PraticandoEstruturasDeControles:
+    @staticmethod
+    def estrutura_if(numero):
+        if numero > 0:
+            print("positivo")
+
+# Chamada correta:
+PraticandoEstruturasDeControles.estrutura_if(10)
+
+# ❌ Errado (não faz sentido):
+obj = PraticandoEstruturasDeControles.estrutura_if(10)  # retorna None
+```
+
+Exatamente o mesmo problema — `new` em C# é equivalente a instanciar uma classe, não chamar um método.
+
+---
+
+## Quando usar `new` vs chamada direta
+
+| Situação | Sintaxe |
+|---|---|
+| Método `static` | `Classe.Metodo(args)` |
+| Método de instância | `var obj = new Classe(); obj.Metodo(args)` |
+| `void` — não retorna nada | Não atribua a variável nenhuma |
+| Retorna valor | `var resultado = Classe.Metodo(args)` |
+
+Como `EstruturaIf` é `static` e `void`, só chama direto e pronto.

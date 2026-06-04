@@ -31,14 +31,28 @@ Console.WriteLine(new string('-', 30));
 */
 
 // Laços de repetição são usados para executar um bloco de código várias vezes, enquanto uma condição for verdadeira.
+/*
 var nomes = new List<string> { "Alice", "Bob", "Charlie" };
 
 Console.WriteLine(PraticandoLacosDeRepeticao.EstruturaFor(nomes));
 Console.WriteLine(PraticandoLacosDeRepeticao.EstruturaWhile(nomes));
 Console.WriteLine(PraticandoLacosDeRepeticao.EstruturaDoWhile(nomes));
 Console.WriteLine(new string('-', 30));
-
+*/
 
 // O foreach é uma estrutura de controle que permite iterar sobre os elementos de uma coleção, como arrays ou listas, de forma mais simples e legível. 
 // Ele é especialmente útil quando você não precisa acessar os índices dos elementos, mas apenas os valores.
+/*
 Console.WriteLine(ArraysForeach.EstruturaForeach(nomes));
+*/
+
+// Orientação a objetos é um paradigma de programação que organiza o código em torno de objetos, que são instâncias de classes. 
+// Uma classe é um molde ou uma estrutura que define as propriedades e comportamentos de um objeto
+
+// Conceitos principais:
+// classe: define um tipo com atributos e métodos.
+// objeto: instância de uma classe.
+// atributos: dados que descrevem o objeto.
+// métodos: ações que o objeto pode executar.
+// modificadores de acesso: public, private, protected, internal controlam visibilidade.
+

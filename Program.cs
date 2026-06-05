@@ -3,6 +3,7 @@ using Introducao.FuncoesMetodos;
 using Introducao.EstruturasDeControles;
 using Introducao.LacosDeRepeticao;
 using Introducao.ArraysForeach;
+using Introducao.PraticandoClass;
 
 // Funções e métodos são blocos de código que realizam uma tarefa específica. 
 // Eles podem receber parâmetros, executar uma série de instruções e retornar um valor. 
@@ -56,3 +57,23 @@ Console.WriteLine(ArraysForeach.EstruturaForeach(nomes));
 // métodos: ações que o objeto pode executar.
 // modificadores de acesso: public, private, protected, internal controlam visibilidade.
 
+// classes são usadas para criar objetos, que são instâncias de uma classe. 
+// Objetos possuem atributos (dados) e métodos (comportamentos) definidos pela classe.
+
+var pessoa = new Pessoa("Leonardo", 28);
+Console.WriteLine($"Nome: {pessoa.Nome}, Idade: {pessoa.Idade}");
+
+var saldo = new ContaBancaria();
+saldo.AdicionarSaldo(decimal.Parse("100.00"));
+saldo.AdicionarSaldo(decimal.Parse("1000.00"));
+//saldo.AdicionarSaldo(decimal.Parse("-1000.00"));
+Console.WriteLine($"Saldo: {saldo.Saldo}");
+
+var produto = new Produto("Notebook", decimal.Parse("1000.00"), 10);
+Console.WriteLine($"Produto: {produto.Nome}, Preço: {produto.Preco}, Quantidade: {produto.Estoque}");
+
+var produto2 = new Produto("Mouse", decimal.Parse("50.00"));
+Console.WriteLine($"Produto: {produto2.Nome}, Preço: {produto2.Preco}, Quantidade: {produto2.Estoque}");
+
+var produto3 = new Produto();
+Console.WriteLine($"Produto: {produto3.Nome}, Preço: {produto3.Preco}, Quantidade: {produto3.Estoque}");

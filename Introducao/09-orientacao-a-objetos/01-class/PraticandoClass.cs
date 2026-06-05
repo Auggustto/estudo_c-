@@ -1,5 +1,6 @@
 namespace Introducao.PraticandoClass;
 
+// Anatomia de uma classe
 public class Pessoa
 {
     public string Nome { get; set; }
@@ -19,6 +20,7 @@ public class Pessoa
     }
 }
 
+// Campos vs. Propriedades
 public class ContaBancaria
 {
     /* 
@@ -52,6 +54,7 @@ public class ContaBancaria
     }
 }
 
+// Contrutores
 public class Produto
 {
     /* 
@@ -85,5 +88,54 @@ public class Produto
         Nome = "Sem nome";
         Preco = 0;
         Estoque = 0;
+    }
+}
+
+// Métodos estáticos vs. de instância
+public class Calculadora
+{
+    // Método de instância: precisa criar objeto antes de chamar
+    public int Somar(int a, int b)
+    {
+        return a + b;
+    }
+
+    // Método estático: pertence à classe, não ao objeto
+    public static double CalcularJuros(decimal valor, double taxa)
+    {
+        return (double)valor * taxa;
+    }
+}
+
+// Herança
+public class Animal
+{
+    public string Nome { get; set; }
+
+    public Animal(string nome)
+    {
+        Nome = nome;
+    }
+
+    // Método virtual: pode ser sobrescrito por classes derivadas'
+    public virtual void EmitirSom()
+    {
+        Console.WriteLine("Animal emitindo som...");
+    }
+}
+
+public class Cachorro : Animal
+{
+    public string Raca { get; set; }
+
+    public Cachorro(string nome, string raca) : base(nome)
+    {
+        Raca = raca;
+    }
+
+    // "override" sobrescreve o método da classe pai
+    public override void EmitirSom()
+    {
+        Console.WriteLine("Au au!");
     }
 }

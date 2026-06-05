@@ -59,7 +59,7 @@ Console.WriteLine(ArraysForeach.EstruturaForeach(nomes));
 
 // classes são usadas para criar objetos, que são instâncias de uma classe. 
 // Objetos possuem atributos (dados) e métodos (comportamentos) definidos pela classe.
-
+/*
 var pessoa = new Pessoa("Leonardo", 28);
 Console.WriteLine($"Nome: {pessoa.Nome}, Idade: {pessoa.Idade}");
 
@@ -77,3 +77,21 @@ Console.WriteLine($"Produto: {produto2.Nome}, Preço: {produto2.Preco}, Quantida
 
 var produto3 = new Produto();
 Console.WriteLine($"Produto: {produto3.Nome}, Preço: {produto3.Preco}, Quantidade: {produto3.Estoque}");
+Console.WriteLine(new string('-', 30));
+*/
+
+/* Herança é um princípio da orientação a objetos que permite criar uma nova classe (classe derivada) a partir de uma classe existente (classe base). 
+A classe derivada herda os atributos e métodos da classe base, podendo adicionar novos atributos e métodos ou modificar os existentes. 
+A herança promove a reutilização de código e a criação de hierarquias de classes, facilitando a organização e manutenção do código. 
+*/
+var cachorro = new Cachorro(nome: "Toby", raca: "Labrador");
+Console.WriteLine($"Nome: {cachorro.Nome}, Raça: {cachorro.Raca}");
+cachorro.EmitirSom();
+
+
+
+/* struct é um tipo de valor, enquanto class é um tipo de referência.
+struct é mais leve e geralmente usado para representar dados simples, enquanto class é mais flexível e pode conter métodos, propriedades e eventos. 
+struct é alocado na stack, enquanto class é alocado no heap. 
+struct não suporta herança, enquanto class suporta herança.
+*/

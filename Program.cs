@@ -4,6 +4,7 @@ using Introducao.EstruturasDeControles;
 using Introducao.LacosDeRepeticao;
 using Introducao.ArraysForeach;
 using Introducao.PraticandoClass;
+using Introducao.PraticandoStruct;
 
 // Funções e métodos são blocos de código que realizam uma tarefa específica. 
 // Eles podem receber parâmetros, executar uma série de instruções e retornar um valor. 
@@ -84,10 +85,12 @@ Console.WriteLine(new string('-', 30));
 A classe derivada herda os atributos e métodos da classe base, podendo adicionar novos atributos e métodos ou modificar os existentes. 
 A herança promove a reutilização de código e a criação de hierarquias de classes, facilitando a organização e manutenção do código. 
 */
+
+/*
 var cachorro = new Cachorro(nome: "Toby", raca: "Labrador");
 Console.WriteLine($"Nome: {cachorro.Nome}, Raça: {cachorro.Raca}");
 cachorro.EmitirSom();
-
+*/
 
 
 /* struct é um tipo de valor, enquanto class é um tipo de referência.
@@ -95,3 +98,17 @@ struct é mais leve e geralmente usado para representar dados simples, enquanto 
 struct é alocado na stack, enquanto class é alocado no heap. 
 struct não suporta herança, enquanto class suporta herança.
 */
+
+var a = new PontoClasse { X = 2, Y = 3 };
+var b = a;        // b aponta para o MESMO objeto que a
+b.X = 10;
+
+Console.WriteLine(a.X);  // 10 — a também mudou!
+Console.WriteLine(b.X);  // 10
+
+var p1 = new PontoStruct { X = 2, Y = 3 };
+var p2 = p1;      // p2 recebe uma CÓPIA independente
+p2.X = 10;
+
+Console.WriteLine(p1.X);  // 2 — p1 não foi afetado
+Console.WriteLine(p2.X);  // 10

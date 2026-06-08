@@ -33,3 +33,18 @@ Uso típico:
 - Listas de tarefas, itens de carrinho ou resultados de busca.
 - Quando você quer adicionar e remover elementos frequentemente.
 - Para converter dados de arrays em estrutura flexível.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Copie o exemplo para `Program.cs` e execute `dotnet run`.
+
+## Exercícios
+- Crie uma `List<int>` com números de 1 a 10, remova os pares e mostre os ímpares.
+- Ordene uma `List<string>` de nomes e imprima-os em ordem alfabética.
+
+## Dicas para iniciantes
+- Use `Add`, `Remove`, `Count` e `Clear` para gerenciar a lista.
+- `List<T>` é mais flexível que `array`, porém tem overhead extra quando usada em grande escala.

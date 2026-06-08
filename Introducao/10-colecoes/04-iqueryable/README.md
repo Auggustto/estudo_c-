@@ -40,3 +40,18 @@ Uso típico:
 - Aplicações que acessam bancos de dados com LINQ.
 - Consultas que precisam ser executadas apenas no momento certo.
 - Cenários em que a fonte de dados pode fazer otimizações internas.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Cole o exemplo no `Program.cs` e rode `dotnet run`.
+
+## Exercícios
+- Use uma `List<int>` e chame `AsQueryable()`. Monte uma consulta com `Where` e `Select` e observe o resultado.
+- Pesquise como o Entity Framework usa `IQueryable<T>` para gerar SQL e tente uma consulta simples em um contexto (se já tiver EF configurado).
+
+## Dicas para iniciantes
+- `IQueryable` é útil quando a fonte de dados pode traduzir a consulta (ex.: banco de dados).
+- Quando estiver apenas trabalhando em memória, `IEnumerable` é suficiente e mais simples.

@@ -41,6 +41,22 @@ Console.WriteLine(p1.X);  // 2 — p1 não foi afetado
 Console.WriteLine(p2.X);  // 10
 ```
 
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. Crie um projeto de console: `dotnet new console -o MinhaApp`
+2. Copie o código do exemplo para `Program.cs`.
+3. Execute `dotnet run` dentro da pasta `MinhaApp`.
+
+## Exercícios
+- Crie um `struct Rectangle` com `Width` e `Height` e um método `Area()` que retorna a área.
+- Teste a cópia de structs: atribua um struct a outro, altere um e observe que o outro não muda.
+
+## Dicas para iniciantes
+- Prefira `struct` apenas para tipos pequenos (poucos campos) e imutáveis quando possível.
+- Se precisa de herança ou comportamento complexo, use `class`.
+
 > Esse comportamento de cópia é exatamente o que torna `struct` seguro para representar valores que nunca devem ser compartilhados acidentalmente.
 
 ---

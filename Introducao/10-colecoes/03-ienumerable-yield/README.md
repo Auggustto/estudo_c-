@@ -39,3 +39,18 @@ Uso típico:
 - Processar linhas de um arquivo uma a uma.
 - Construir sequências matemáticas sem armazenar todos os resultados.
 - Expor dados de forma compatível com LINQ.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Cole o exemplo no `Program.cs` e execute `dotnet run`.
+
+## Exercícios
+- Implemente um gerador `IEnumerable<int>` que retorne os primeiros N números de Fibonacci usando `yield return`.
+- Leia linhas de um arquivo texto (use `File.ReadLines`) e processe-as com `foreach` sem carregar tudo na memória.
+
+## Dicas para iniciantes
+- Use `yield return` para criar coleções que não precisam ser armazenadas por completo.
+- Isso ajuda a reduzir uso de memória em sequências longas.

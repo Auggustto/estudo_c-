@@ -36,6 +36,22 @@ public class Pessoa
         return Idade >= 18;
     }
 }
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. Crie um projeto de console: `dotnet new console -o MinhaApp`
+2. Copie o código do exemplo para `Program.cs` dentro da pasta `MinhaApp`.
+3. Execute: `dotnet run` dentro de `MinhaApp`.
+
+## Exercícios
+- Crie uma classe `Aluno` com `Nome`, `Matricula` e método `MostrarDados()` e teste no `Main`.
+- Implemente uma classe `ContaBancaria` com `Depositar` e `Sacar` e simule operações.
+
+## Dicas para iniciantes
+- Comece pequeno: implemente uma classe com poucos membros e teste frequentemente.
+- Use `Console.WriteLine` para depurar valores enquanto aprende.
 ```
 
 ---

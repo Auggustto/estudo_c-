@@ -44,3 +44,18 @@ Uso típico:
 - Interoperabilidade com COM, Python ou JavaScript.
 - Processar dados sem esquema fixo.
 - Quando não é possível definir os tipos antes da execução.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Cole o exemplo no `Program.cs` e rode `dotnet run`.
+
+## Exercícios
+- Crie um `ExpandoObject`, adicione propriedades dinamicamente e chame uma função armazenada em uma propriedade.
+- Experimente desserializar um JSON simples para `dynamic` usando `System.Text.Json` (pesquise a forma recomendada no .NET atual).
+
+## Dicas para iniciantes
+- Use `dynamic` com cautela: você perde verificação em tempo de compilação.
+- Prefira tipos estáticos quando possível; `dynamic` é útil para interoperabilidade ou protótipos rápidos.

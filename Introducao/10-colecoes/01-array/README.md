@@ -33,3 +33,18 @@ Uso típico:
 - Vetores de dados matemáticos.
 - Armazenar valores de configuração em sequência.
 - Quando o tamanho não muda após a criação.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Copie o exemplo para `Program.cs` e execute `dotnet run`.
+
+## Exercícios
+- Crie um array de inteiros e calcule a soma de todos os elementos.
+- Crie um array de strings com nomes e imprima o último elemento.
+
+## Dicas para iniciantes
+- Use `Length` para obter o tamanho do array.
+- Se precisar adicionar/remove itens dinamicamente, prefira `List<T>`.

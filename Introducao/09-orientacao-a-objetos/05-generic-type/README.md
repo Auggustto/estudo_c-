@@ -48,3 +48,18 @@ Imprimir("Teste");
 Uso típico:
 - `List<T>`, `Dictionary<TKey, TValue>` e outras coleções.
 - Repositórios genéricos e serviços que não dependem do tipo exato.
+
+## Pré-requisitos
+- Ter o .NET SDK instalado: https://dotnet.microsoft.com
+
+## Como compilar e executar
+1. `dotnet new console -o MinhaApp`
+2. Copie o exemplo para `Program.cs` e rode `dotnet run`.
+
+## Exercícios
+- Implemente uma classe genérica `Caixa<T>` que armazena um valor e tem método `Mostrar()`.
+- Crie um método genérico `Trocar<T>(ref T a, ref T b)` que troca dois valores.
+
+## Dicas para iniciantes
+- Generics evitam conversões e tornam o código mais seguro em tempo de compilação.
+- Pense em generics quando criar coleções ou utilitários que devem funcionar com vários tipos.

@@ -5,6 +5,7 @@ using Introducao.LacosDeRepeticao;
 using Introducao.ArraysForeach;
 using Introducao.PraticandoClass;
 using Introducao.PraticandoStruct;
+using Introducao.PraticandoRecord;
 
 // Funções e métodos são blocos de código que realizam uma tarefa específica. 
 // Eles podem receber parâmetros, executar uma série de instruções e retornar um valor. 
@@ -99,6 +100,7 @@ struct é alocado na stack, enquanto class é alocado no heap.
 struct não suporta herança, enquanto class suporta herança.
 */
 
+/* 
 var a = new PontoClasse { X = 2, Y = 3 };
 var b = a;        // b aponta para o MESMO objeto que a
 b.X = 10;
@@ -112,3 +114,15 @@ p2.X = 10;
 
 Console.WriteLine(p1.X);  // 2 — p1 não foi afetado
 Console.WriteLine(p2.X);  // 10
+
+*/
+
+/*
+Record é um tipo de referência imutável, ideal para representar dados que não devem ser alterados após a criação.
+Ele é útil para criar objetos de valor, onde a igualdade é baseada no conteúdo dos dados, e não na referência do objeto. 
+Record é uma forma concisa de definir classes imutáveis, com suporte a comparação de igualdade baseada em valor e recursos de desestruturação.
+*/
+PraticandoRecord.PessoaRecord();
+
+/**/
+/**/

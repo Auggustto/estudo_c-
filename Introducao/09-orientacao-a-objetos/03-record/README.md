@@ -43,11 +43,3 @@ Uso típico:
 ## Como compilar e executar
 1. `dotnet new console -o MinhaApp`
 2. Copie o exemplo para `Program.cs` e execute `dotnet run`.
-
-## Exercícios
-- Crie um `record` chamado `Endereco` com `Rua`, `Numero` e `Cidade`. Crie duas instâncias com os mesmos valores e compare-as.
-- Use `with` para criar uma cópia de um `record` alterando apenas uma propriedade.
-
-## Dicas para iniciantes
-- Use `record` quando quiser igualdade por valor e imutabilidade fácil.
-- Records são excelentes para DTOs e respostas de APIs.

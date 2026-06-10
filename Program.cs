@@ -6,6 +6,7 @@ using Introducao.ArraysForeach;
 using Introducao.PraticandoClass;
 using Introducao.PraticandoStruct;
 using Introducao.PraticandoRecord;
+using Introducao.PraticandoRecord2;
 
 // Funções e métodos são blocos de código que realizam uma tarefa específica. 
 // Eles podem receber parâmetros, executar uma série de instruções e retornar um valor. 
@@ -121,8 +122,21 @@ Console.WriteLine(p2.X);  // 10
 Record é um tipo de referência imutável, ideal para representar dados que não devem ser alterados após a criação.
 Ele é útil para criar objetos de valor, onde a igualdade é baseada no conteúdo dos dados, e não na referência do objeto. 
 Record é uma forma concisa de definir classes imutáveis, com suporte a comparação de igualdade baseada em valor e recursos de desestruturação.
-*/
-PraticandoRecord.PessoaRecord();
 
-/**/
-/**/
+//PraticandoRecord.PessoaRecord();
+
+var person = new Person("Leonardo", 28);
+var person2 = new Person(person.Name, person.Age);
+
+person.ChangeName("Toby");
+
+Console.WriteLine($"É igual: {person.Equals(person2)}"); // False, pois são objetos diferentes na memória por mais que tenham os mesmos valores
+
+Console.WriteLine(new string('-', 20));
+var personRecord = new PersonRecord("Leonardo", 28);
+var personRecord2 = personRecord with { Name = "Leonardo" }; // Criando um novo objeto com base em personRecord, mas com o nome modificado
+Console.WriteLine($"É igual: {personRecord.Equals(personRecord2)}"); // True, pois são objetos com os mesmos valores na memória, mesmo que sejam objetos diferentes na memória por mais que tenham os mesmos valores
+
+var personRecord3 = personRecord with { Name = "Toby" }; // Criando um novo objeto com base em personRecord, mas com o nome modificado 
+Console.WriteLine($"valor de personRecord3: {personRecord3.Name}, Idade: {personRecord3.Age}");
+*/
